@@ -20,8 +20,8 @@ const proxiedBase = '/808gps';
 const cameraBase = isLocalHost ? directBase : proxiedBase;
 
 const camUrls = {
-    cam1: `${cameraBase}/open/player/video.html?lang=en&devIdno=290320207005&account=PWS&password=PWS1234&channel=1&chns=0`,
-    cam2: `${cameraBase}/open/player/video.html?lang=en&devIdno=290320207005&account=PWS&password=PWS1234&channel=1&chns=1`
+    cam1: `${cameraBase}/open/player/video.html?lang=en&devIdno=290320207005&account=PWS&password=PWS1234&channel=1&chns=0&isWxApp=1`,
+    cam2: `${cameraBase}/open/player/video.html?lang=en&devIdno=290320207005&account=PWS&password=PWS1234&channel=1&chns=1&isWxApp=1`
 };
 
 function initCamFrames() {
