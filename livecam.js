@@ -1,10 +1,3 @@
-// Compatibility hook for the camera player when embedded in same-origin iframe via proxy.
-window.getUrlParameter = window.getUrlParameter || function (name) {
-    const query = window.location.search ? window.location.search.substring(1) : '';
-    const params = new URLSearchParams(query);
-    return params.get(name) || '';
-};
-
 function updateTimestamp() {
     const now = new Date();
     const timeString = now.toLocaleString('id-ID', {
